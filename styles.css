@@ -131,6 +131,14 @@ h1 {
   font-weight: 500;
   line-height: 1.6;
 }
+.offer-subline {
+  margin: 17px 0 0;
+  color: var(--gold-strong);
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
 .positioning {
   margin: 29px 0 0;
   padding: 24px 26px;
@@ -238,15 +246,6 @@ h1 {
 .demo-offer > p:not(.demo-label) { margin: 17px 0 0; font-size: 15px; line-height: 1.55; }
 
 .form-heading { margin-bottom: 24px; }
-.form-heading > span {
-  display: block;
-  margin-bottom: 9px;
-  color: var(--gold-strong);
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
 .form-heading h2 {
   margin: 0;
   color: var(--ink);
@@ -257,7 +256,6 @@ h1 {
 }
 .form-heading p { margin: 13px 0 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
 #demo-form { display: grid; gap: 16px; }
-.field-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .field { min-width: 0; }
 .field label {
   display: block;
@@ -268,8 +266,7 @@ h1 {
   line-height: 1.35;
 }
 .field label span { color: #9c6d00; }
-input,
-select {
+input {
   width: 100%;
   min-height: 49px;
   padding: 12px 14px;
@@ -281,13 +278,9 @@ select {
   font: inherit;
   font-size: 15px;
 }
-select { appearance: auto; }
-input:hover,
-select:hover { border-color: #aaa493; }
-input:focus,
-select:focus { border-color: var(--ink); box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.48); }
-input:user-invalid,
-select:user-invalid { border-color: #b23c2d; }
+input:hover { border-color: #aaa493; }
+input:focus { border-color: var(--ink); box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.48); }
+input:user-invalid { border-color: #b23c2d; }
 .submit-button {
   display: flex;
   width: 100%;
@@ -321,7 +314,6 @@ select:user-invalid { border-color: #b23c2d; }
   font-size: 24px;
   line-height: 1;
 }
-.form-note { margin: -2px 2px 0; color: var(--muted); font-size: 12px; line-height: 1.5; text-align: center; }
 .form-status { display: none; padding: 15px 17px; border-radius: 10px; font-size: 14px; line-height: 1.5; }
 .form-status.is-error { display: block; color: #7d2118; border: 1px solid #ddb3ad; background: #fff4f2; }
 .form-status.is-success { display: block; color: #203c21; border: 1px solid #bed3b8; background: #f3faef; }
@@ -356,7 +348,6 @@ select:user-invalid { border-color: #b23c2d; }
   .audience-section .dash-list { margin-top: 18px; }
   .demo-offer { margin-top: 31px; padding: 24px 18px; }
   .form-heading h2 { font-size: 28px; }
-  .field-row { grid-template-columns: 1fr; gap: 16px; }
   .submit-button { min-height: 60px; padding-left: 20px; font-size: 15px; }
   .button-arrow { width: 44px; height: 44px; flex-basis: 44px; }
 }

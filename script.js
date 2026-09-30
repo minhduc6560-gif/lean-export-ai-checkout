@@ -13,7 +13,7 @@
 
     if (!form.checkValidity()) {
       form.reportValidity();
-      status.textContent = "Vui lòng hoàn thành các trường bắt buộc và kiểm tra lại email công việc.";
+      status.textContent = "Vui lòng hoàn thành các trường bắt buộc và kiểm tra lại email.";
       status.classList.add("is-error");
       return;
     }
